@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Bronwyn Abbott | Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Perfect masonry isotope portfolio template. Masonry portfolio examples. Build your portfolio with berger template." />
+    <meta name="keywords" content="masonry portfolio, portfolio design, portfolio template, minimal portfolio, masonry isotope portfolio " />
+    <meta name="author" content="ClaPat Studio">
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <link href="style.css" rel="stylesheet" />
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>    
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+</head>
+    
+
+
+<body>
+    
+    <div class="clapat-mask"><div id="clapatloader"></div></div>
+
+
+
+
+    <!-- Header -->
+    <header class="first-load">
+    
+                            
+        <!-- Header Wrapper -->                    
+        <div id="header-wrapper">
+            
+            <!-- Menu Button-->
+            <a class="btn_menu clapat-menubtn">
+            <span class="btn_menu_line"></span>
+            <span class="btn_menu_line"></span>
+            <span class="btn_menu_line"></span>
+            <div style="margin-top:-30px; margin-left:-3px;">Menu</div>
+            </a>
+            
+            <!--/Menu Button-->
+            
+            
+            <!-- Overlay Menu-->
+            <?php include("menu.html"); ?>
+            <!--/Overlay Menu-->
+            
+            
+            
+        </div>
+        <!--/Header Wrapper -->
+        	
+        
+        
+    
+    </header>
+    <!--/Header -->
+
+
+	<!-- Content -->
+    <div id="content"><div id="content-ajax">
+        
+        
+        <!-- Main --> 
+        <div id="main">
+            
+            <!-- Container -->    
+           	<div class="container">
+            	
+                <div class="one_half">
+            		  <a class="image" href="images/portfolio/22_thumb.jpg"><img src="images/portfolio/22_thumb.jpg" style="width:100%" alt="image"></a>
+                </div>
+                
+
+                <hr>
+                
+                <div class="text-align-center padding-box">                
+                	<h4 class="prj_h4">Project 13 - Sold</h4>                    
+                    <p class="monospace title-has-line">800 X 800mm</p>
+                    <!--<br>
+                    <a class="clapat-button">Download</a>-->
+                </div>
+                
+                
+                <!-- Projects Navigation -->
+                <div class="projects-nav">
+                
+                	<a class="prev-project" href="project-12.html">
+                    	<div class="buton-nav-content">
+                            <!-- <span class="name-prev-project">Project 21</span> -->
+                            <span class="text-prev-project">Prev Project</span>
+                        </div>
+                    </a>
+                    
+                    <a class="all-projects" href="index.html">Back to home<span>...</span></a>
+                    <!-- <p class="soldnsale">Sold</p> -->
+
+                    <a class="next-project" href="project-14.html">
+                        <div class="buton-nav-content">
+                            <!-- <span class="name-next-project">Project 23</span> -->
+                            <span class="text-next-project">Next Project</span>
+                        </div>
+                    </a>
+                    
+                
+                </div>
+                <!--/Projects Navigation -->
+                
+                
+                
+            </div>       
+            <!--/Container -->
+            
+        </div>                
+        <!--/Main -->   
+		
+        
+        <!-- Scroll To Top -->
+        <div class="scrolltotop"><div class="top-arrow"></div></div>
+        <!--/Scroll To Top -->
+    
+    
+    </div></div>
+	<!--/Content -->
+
+
+
+
+
+	<!-- Footer -->
+    <?php include("footer.html"); ?>
+    <!--/Footer -->
+    
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    
+    <script src="js/scripts.js"></script>   
+    <script src="js/jquery.magnific-popup.js"></script>   
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7069518-8']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <script>
+    $(document).ready(function() { 
+        $(".image").magnificPopup({
+             type:'image',
+             mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+                zoom: {
+                    enabled: true, // By default it's false, so don't forget to enable it
+
+                    duration: 200, // duration of the effect, in milliseconds
+                    easing: 'ease-in-out', // CSS transition easing function 
+
+                    // The "opener" function should return the element from which popup will be zoomed in
+                    // and to which popup will be scaled down
+                    // By defailt it looks for an image tag:
+                    opener: function(openerElement) {
+                      // openerElement is the element on which popup was initialized, in this case its <a> tag
+                      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                      return openerElement.is('img') ? openerElement : openerElement.find('img');
+                    }
+                }
+        });
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php include("head.html"); ?>
+</head>
+    
+
+
+<body>
+    
+    <div class="clapat-mask"><div id="clapatloader"></div></div>
+
+
+
+
+    <!-- Header -->
+    <header class="first-load">
+    
+                            
+        <!-- Header Wrapper -->                    
+        <div id="header-wrapper">
+             
+            
+            <!-- Menu Button-->
+            <a class="btn_menu clapat-menubtn">
+                <span class="btn_menu_line"></span>
+                <span class="btn_menu_line"></span>
+                <span class="btn_menu_line"></span>
+            </a>
+            <!--/Menu Button-->
+            
+            
+            <!-- Overlay Menu-->
+            <?php include("menu.html"); ?>
+            <!--/Overlay Menu-->
+            
+            
+            
+        </div>
+        <!--/Header Wrapper -->
+        	
+        
+        
+    
+    </header>
+    <!--/Header -->
+
+
+	<!-- Content -->
+    <div id="content"><div id="content-ajax">
+        
+        
+        <!-- Main --> 
+        <div id="main">
+            
+            <!-- Container -->    
+           	<div class="container">
+            	
+
+                <ul class="our-team">
+                
+                
+                    <!-- Team Member -->
+                    <a class="image" href="images/testimonial/testimonial01.jpeg">
+                    <li class="team-member" style="background-image:url(images/testimonial/testimonial01.jpeg);">
+                        <div class="team-overflow">
+                        <img src="images/testimonial/testimonial01.jpeg" style="width:100%" alt="image" hidden>
+                            <div class="team-info">
+                                <h5 class="team-name">Name 01</h5>
+                                <p class="monospace title-has-line team-function">Subname 01</p>
+                            </div>
+                        </div>
+                    </li>
+                    </a>
+
+                    <a class="image" href="images/testimonial/testimonial02.jpeg">
+                    <li class="team-member" style="background-image:url(images/testimonial/testimonial02.jpeg);">
+                        <div class="team-overflow">
+                        <img src="images/testimonial/testimonial02.jpeg" style="width:100%" alt="image" hidden>
+                            <div class="team-info">
+                                <h5 class="team-name">Name 02</h5>
+                                <p class="monospace title-has-line team-function">Subname 02</p>
+                            </div>
+                        </div>
+                    </li>
+                    </a>
+
+                    <a class="image" href="images/testimonial/testimonial03.jpeg">
+                    <li class="team-member" style="background-image:url(images/testimonial/testimonial03.jpeg);">
+                        <div class="team-overflow">
+                        <img src="images/testimonial/testimonial03.jpeg" style="width:100%" alt="image" hidden>
+                            <div class="team-info">
+                                <h5 class="team-name">Name 03</h5>
+                                <p class="monospace title-has-line team-function">Subname 03</p>
+                            </div>
+                        </div>
+                    </li>
+                    </a>
+
+                    <a class="image" href="images/testimonial/testimonial04.jpg">
+                    <li class="team-member" style="background-image:url(images/testimonial/testimonial04.jpg);float:left;">
+                        <div class="team-overflow">
+                        <img src="images/testimonial/testimonial04.jpg" style="width:100%" alt="image" hidden>
+                            <div class="team-info">
+                                <h5 class="team-name">Name 04</h5>
+                                <p class="monospace title-has-line team-function">Subname 04</p>
+                            </div>
+                        </div>
+                    </li>
+                    </a>
+                </ul>
+                
+
+                 <!-- <hr>
+                
+                <div class="text-align-center padding-box">                
+                	<h4 class="prj_h4">Mercury lights</h4>                    
+                    <p class="monospace title-has-line">1000 X 1000mm</p>
+                    <!--<br>
+                    <a class="clapat-button">Download</a>
+                </div> -->
+                
+                
+                <!-- Projects Navigation -->
+                <div class="projects-nav">
+                
+                    <a class="all-projects" href="index.html">Back to home<span>...</span></a>
+                    
+                    <!-- <a class="next-project ajax-link" href="project-2.html">
+                    	<div class="buton-nav-content">
+                            <span class="name-next-project">Santorini meets the southern seas</span>
+                            <span class="text-next-project">Next Project</span>
+                        </div>
+                    </a> -->
+                
+                </div>
+                <!--/Projects Navigation -->
+                
+                
+                
+            </div>       
+            <!--/Container -->
+            
+        </div>                
+        <!--/Main -->   
+		
+        
+        <!-- Scroll To Top -->
+        <div class="scrolltotop"><div class="top-arrow"></div></div>
+        <!--/Scroll To Top -->
+    
+    
+    </div></div>
+	<!--/Content -->
+
+
+
+
+
+	<!-- Footer -->
+    <?php include("footer.html"); ?>
+    <!--/Footer -->
+    
+    
+	<script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    
+    <script src="js/scripts.js"></script>	
+    <script src="js/jquery.magnific-popup.js"></script>   
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7069518-8']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <script>
+    $(document).ready(function() { 
+        $(".image").magnificPopup({
+             type:'image',
+        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+             zoom: {
+                    enabled: true, // By default it's false, so don't forget to enable it
+
+                    duration: 200, // duration of the effect, in milliseconds
+                    easing: 'ease-in-out', // CSS transition easing function 
+
+                    // The "opener" function should return the element from which popup will be zoomed in
+                    // and to which popup will be scaled down
+                    // By defailt it looks for an image tag:
+                    opener: function(openerElement) {
+                      // openerElement is the element on which popup was initialized, in this case its <a> tag
+                      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                      return openerElement.is('img') ? openerElement : openerElement.find('img');
+                        }
+                    },
+
+        gallery: {
+              enabled: true, // set to true to enable gallery
+
+              preload: [0,2], // read about this option in next Lazy-loading section
+
+              navigateByImgClick: true,
+
+              arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+
+              tPrev: 'Previous (Left arrow key)', // title for left button
+              tNext: 'Next (Right arrow key)', // title for right button
+              tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
+        }
+
+        });
+    });
+    </script>
+    
+</body>
+
+</html>
