@@ -10,6 +10,16 @@
     <meta name="author" content="ClaPat Studio">
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
         
     <link rel="icon" type="image/ico" href="images/favicon.ico" />
     <link href="style.css" rel="stylesheet" />
@@ -19,12 +29,35 @@
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>    
+
 </head>
     
 
 
 <body>
-    
+    <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                              </div>
+                              <div class="modal-body">
+                                ...
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+
     <div class="clapat-mask"><div id="clapatloader"></div></div>
 
 
@@ -144,16 +177,38 @@
                     
                     <!-- Blog Navigation -->
                     <ul class="blog-nav">                
-                        <li class="prev-posts"><a href="#">Prev Post</a></li>                    
+                        <li class="prev-posts"><a href="#">Prev Post</a></li>
                         <li class="next-posts"><a href="#">Next Post</a></li>                
                     </ul>
                     <!--/Blog Navigation -->
 
-                    <hr><hr><hr><hr>
-                    <!-- Comment -->
-                    <div id="disqus_thread"></div><hr>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        White
+                    </button>
 
-                    <div class="fb-comments" data-href="http://www.bronwynabbott.com/blog.html" data-numposts="5" data-colorscheme="light"></div>
+
+                    
+
+
+
+
+                    <hr><hr><hr>
+                    <!-- Diques Comment -->
+                    <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                            var disqus_shortname = 'bronwynabbott-artist'; // required: replace example with your forum shortname
+
+                            /* * * DON'T EDIT BELOW THIS LINE * * */
+                            (function() {
+                                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
                     
                 
                 
@@ -183,10 +238,6 @@
     <?php include("footer.html"); ?>
     <!--/Footer -->
     
-    
-    
-    
-    
 
 	<script src="js/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
@@ -205,23 +256,10 @@
 
 
 
-    <!-- comment for  disqus-->
+    <!-- Disqus Js script -->
     <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'browynabbott'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-        <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'browynabbott'; // required: replace example with your forum shortname
+    var disqus_shortname = 'bronwynabbott-artist'; // required: replace example with your forum shortname
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function () {
@@ -231,6 +269,8 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
     </script>
+    
+
 
     <!-- Comment for facebook -->
     <div id="fb-root"></div>
