@@ -1860,6 +1860,11 @@ $.magnificPopup.registerModule('gallery', {
 					item.loadError = true;
 					_mfpTrigger('LazyLoadError', item);
 				}).attr('src', item.src);
+
+			}
+
+			if(item.type === 'msg'){
+				item.msg = $('<p>test</p>');
 			}
 
 
