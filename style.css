@@ -398,6 +398,11 @@ Primary use:	Showcase Portfolio
 		max-width: 100%;
 		vertical-align: middle;
 	}
+
+	.img-circle{
+		border-radius: 50%;
+		width: 60px;
+	}
 		
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
@@ -1243,6 +1248,15 @@ Primary use:	Showcase Portfolio
 		position:relative;
 		z-index:1;
 		padding:200px 0;
+		width:100%;
+		overflow-x:hidden;
+	}
+
+	#main-testimonial {
+		background-color:#fff;
+		position:relative;
+		z-index:1;
+		padding:0;
 		width:100%;
 		overflow-x:hidden;
 	}
@@ -2752,6 +2766,7 @@ Primary use:	Showcase Portfolio
 		width:1380px;
 		text-align:center;
 		margin-left:-50px;
+		margin-top: -100px;
 	}
 	
 	.our-team li.team-member {
@@ -2768,7 +2783,7 @@ Primary use:	Showcase Portfolio
 		width:360px;
 		height:440px;
 		overflow:hidden;
-		position:absolute;
+		/*position:absolute;*/
 		text-align:left;
 		transition:all 0.3s ease 0s;
 		-moz-transition:all 0.3s ease 0s;
