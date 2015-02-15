@@ -538,6 +538,11 @@ Primary use:	Showcase Portfolio
 	  outline: 0;
 	  color: #34d5cb;
 	}
+
+	a > #testimonial-oppinion:hover, a > #testimonial-oppinion:active, a > #testimonial-oppinion:focus {
+	  outline: 0;
+	  color: #000;
+	}
 	
 	a {
         text-decoration: none;
@@ -1831,6 +1836,20 @@ Primary use:	Showcase Portfolio
 	}
 	
 	.projects-nav:after {
+		clear: both;
+		content: " ";
+		display: block;
+	}
+
+	.projects-nav-testimonial {
+		width:100%;
+		height:auto;
+		display:inline-block;
+		margin-top:100px;
+		margin-bottom: 150px;
+	}
+
+	.projects-nav-testimonial:after {
 		clear: both;
 		content: " ";
 		display: block;
