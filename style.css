@@ -538,11 +538,11 @@ Primary use:	Showcase Portfolio
 	  outline: 0;
 	  color: #34d5cb;
 	}
-
-	a > #testimonial-oppinion:hover, a > #testimonial-oppinion:active, a > #testimonial-oppinion:focus {
+/*
+	a > li > div > div > span > p:hover, a > li > div > div > span > p:active, a > li > div > div > span > p:focus {
 	  outline: 0;
-	  color: #000;
-	}
+	  color: red;
+	}*/
 	
 	a {
         text-decoration: none;
