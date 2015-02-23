@@ -3847,10 +3847,16 @@ Primary use:	Showcase Portfolio
 	
 	.prev-project {
 		width:0;
+		margin-top: 10px;
 	}
 	
 	.next-project {
 		width:0;
+		margin-top: 10px;
+	}
+
+	.all-projects{
+		margin-top: 10px;
 	}
 	
 	#contact-formular {
@@ -4039,6 +4045,10 @@ Primary use:	Showcase Portfolio
 		height: auto;		
 		width: 100%;
 	}
+
+	.testimonial_opinions{
+		width: 260px;
+	}
 	
 	
 }
@@ -4107,7 +4117,17 @@ Primary use:	Showcase Portfolio
 		font-size:60px;
 		line-height:60px;
 	}
+
+	.testimonial_opinions{
+		width:390px;
+	}
 	
+}
+
+@media only screen and (max-width: 1023px){
+	.testimonial_opinions{
+		width:390px;
+	}
 }
 
 
@@ -4177,6 +4197,10 @@ Primary use:	Showcase Portfolio
 	}
 	.monospace1{
 		bottom: -70px;
+	}
+
+	.testimonial_opinions{
+		width: 220px;
 	}
 		
 }	
