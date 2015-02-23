@@ -9,13 +9,13 @@ First Load Page
 	$('body').waitForImages({
 		finished: function() {
 			
-			setTimeout(function(){
+			var id = setTimeout(function(){
 				$('header').removeClass('first-load');
-				setTimeout(function(){
+				var id2 =  setTimeout(function(){
 					$('#header-wrapper').animate({opacity : 1}, 1);
-				}, 1);
+				}, 1);clearTimeout(id2);
 				openWebsite();
-			}, 1);
+			}, 1);clearTimeout(id);
 		},
 		waitForAll: true
 	});
@@ -227,12 +227,12 @@ Function Hide Show Menu
 			
 			if( $('.hsm').length > 0 ){
 				
-				setInterval(function() {
+				var id20 = setInterval(function() {
 					if (didScroll) {
 						hasScrolled();
 						didScroll = false;
 					}
-				}, 100);
+				}, 1);clearInterval(id20)
 			
 			}
 		
@@ -326,7 +326,7 @@ Function Menu Overlay
 					e.closebtn.addClass("is-active");
 					e.navigation.addClass("nav-up");
 					e.isAnimating = !1,
-					$.each($('.menu-item'), function(i, el){setTimeout(function(){$(el).animate({'opacity':1.0});},500 + ( i * 80 ));});				
+					$.each($('.menu-item'), function(i, el){ var id4 = setTimeout(function(){$(el).animate({'opacity':1.0});},1 + ( i * 80 ));clearTimeout(id4);});				
 				}
 				var e = this.settings;
 				if (e.isAnimating === !1) {
@@ -337,7 +337,7 @@ Function Menu Overlay
 				}
 			},
 			close: function() {
-				$.each($('.menu-item').get().reverse(), function(i, el){setTimeout(function(){$(el).css({'opacity':0});},1 + ( i * 60 ));});
+				$.each($('.menu-item').get().reverse(), function(i, el){ var id5 = setTimeout(function(){$(el).css({'opacity':0});},1 + ( i * 60 ));clearTimeout(id5);});
 				function t() {
 					e.menu.css("display", "none");
 					e.isAnimating = !1
@@ -349,7 +349,7 @@ Function Menu Overlay
 					e.menu.removeClass("is-active");
 					e.closebtn.removeClass("is-active");
 					e.navigation.removeClass("nav-up");
-					setTimeout(t, 1200)
+					var id6 = setTimeout(t, 1);clearTimeout(id6);
 				}
 			}
 		};
@@ -503,16 +503,16 @@ Function Slider Background Change Logo and Menu Color
 			
 		$('.flex-direction-nav').on("click touchstart",function(){
 			if($('li.dark-bg').hasClass("flex-active-slide")){
-				setTimeout(function(){
+				var id7 = setTimeout(function(){
 					$("#logo img").attr('src', 'images/logo_white.png');
 					$(".clapat-menubtn .btn_menu_line").css('background-color', '#fff');
-				},900);
+				},1);clearTimeout(id7);
 			}
 			else {       
-				setTimeout(function(){
+				var id8 = setTimeout(function(){
 					$("#logo img").attr('src', 'images/logo.png');
 					$(".clapat-menubtn .btn_menu_line").css('background-color', '#222');
-				},900);
+				},1);clearTimeout(id8);
 			}
 		});
 		
@@ -876,9 +876,9 @@ Function Toggle Secondary Menu
 		
 		if ($("#filters").hasClass('filters-hide')){
 			$("#filters").toggleClass("filters-hide");
-			setTimeout(function(){
+			var id9 = setTimeout(function(){
 				$('html, body').animate({ scrollTop: $("#main").offset().top +1 }, 1);
-			},( 1 ));		
+			},( 1 ));clearTimeout(id9);		
 		} else {
 			$("#filters").toggleClass("filters-hide");
 		}		
@@ -896,9 +896,9 @@ Function Toggle Secondary Menu
 		
 		if ($("#contact-info").hasClass('contact-hide')){		
 			$("#contact-info").toggleClass("contact-hide");	
-			setTimeout(function(){
+			var id10 = setTimeout(function(){
 				$('html, body').animate({ scrollTop: $("#main").offset().top +1 }, 1);
-			},( 1 ));			
+			},( 1 ));clearTimeout(id10);			
 		} else {
 			$("#contact-info").toggleClass("contact-hide");
 		}		
@@ -916,9 +916,9 @@ Function Toggle Secondary Menu
 		
 		if ($("#search-box").hasClass('search-hide')){		
 			$("#search-box").toggleClass("search-hide");	
-			setTimeout(function(){
+			var id11 = setTimeout(function(){
 				$('html, body').animate({ scrollTop: $("#main").offset().top +1 }, 1);
-			},( 1 ));			
+			},( 1 ));clearTimeout(id11);			
 		} else {
 			$("#search-box").toggleClass("search-hide");
 		}		
@@ -936,9 +936,9 @@ Function Toggle Secondary Menu
 		
 		if ($("#post-sharing").hasClass('share-hide')){		
 			$("#post-sharing").toggleClass("share-hide");	
-			setTimeout(function(){
+			var id12 = setTimeout(function(){
 				$('html, body').animate({ scrollTop: $("#main").offset().top +1 }, 1);
-			},( 1 ));			
+			},( 1 ));clearTimeout(id12);			
 		} else {
 			$("#post-sharing").toggleClass("share-hide");
 		}		
@@ -1098,9 +1098,9 @@ Function AppearIteam
 					},500,'easeOutSine');	
 				} else if($(this).attr('data-animation') == 'grow-in') {
 					var $that = $(this);
-					setTimeout(function(){ 
+					var id13 = setTimeout(function(){ 
 						$that.transition({ scale: 1, 'opacity':1 },900,'easeInCubic');
-					},$that.attr('data-delay'));
+					},$that.attr('data-delay'));clearTimeout(id13);
 				}			
 			},{accX: 0, accY: -105},'easeInCubic');
 		
@@ -1124,25 +1124,25 @@ Function VideoHeader
 		
 					$(".player").mb_YTPlayer();
 					
-					setTimeout(function() {
+					var id14 = setTimeout(function() {
 						  $('#bgndVideo').pauseYTP();
-					}, 1000);		
+					}, 1);clearTimeout(id14);		
 					
 					$('#playmovie').click(function() {			
 							$('#playmovie').addClass('hidden-play');
-							setTimeout(function(){
+							var id15 = setTimeout(function(){
 								$('#playmovie').fadeOut();	
-							}, 600);
+							}, 1);clearTimeout(id15);
 							$('#bgndVideo').playYTP();
 										
 					});			
 					
 					$('#stopmovie').click(function() {			
 						$('#playmovie').fadeIn(1);
-						setTimeout(function(){
+						var id16 = setTimeout(function(){
 							$('#playmovie').removeClass('hidden-play');				
 							$('#bgndVideo').pauseYTP();				
-						}, 100);
+						}, 1);clearTimeout(id16);
 					});	
 			
 				} else {
