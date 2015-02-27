@@ -3752,6 +3752,81 @@ Primary use:	Showcase Portfolio
 /*--------------------------------------------------
 	16. Responsive
 ---------------------------------------------------*/			
+@media only screen and (max-width: 1920px) {
+	.sale01 {
+    margin-left: 14%;  
+    top: 310px;  
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+
+	.sale02 {
+    margin-left: 47%;  
+    top: 295px; 
+
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+
+	.sale03 {
+    margin-left: 80%;  
+    top: 285px;  
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+
+	.sale04 {
+    margin-left: 14%;  
+    top: 605px;  
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+
+	.sale05 {
+    margin-left: 47%;  
+    top: 590px;
+
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+
+	.sale06 {
+    margin-left: 80%;  
+    top: 580px;  
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+
+	.sale07 {
+    margin-left: 14%;  
+    top: 900px;  
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+
+	.sale08 {
+    margin-left: 47%;  
+    top: 885px;
+
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+
+	.sale09 {
+    margin-left: 80%;  
+    top: 875px;  
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+
+	.sale10 {
+    margin-left: 14%;  
+    top: 1195px;  
+    color: rgb(0, 0, 0);  
+    position: relative;
+	}
+}
+
 			
 @media only screen and (max-width: 1466px) {
 
@@ -3764,7 +3839,8 @@ Primary use:	Showcase Portfolio
 
 	.sale02 {
     margin-left: 47%;  
-    top: 215px;  
+    top: 215px;
+    float: left;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
@@ -3785,7 +3861,8 @@ Primary use:	Showcase Portfolio
 
 	.sale05 {
     margin-left: 47%;  
-    top: 420px;  
+    top: 420px;
+    float: left;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
@@ -3806,7 +3883,8 @@ Primary use:	Showcase Portfolio
 
 	.sale08 {
     margin-left: 47%;  
-    top: 625px;  
+    top: 625px; 
+    float: left; 
     color: rgb(0, 0, 0);  
     position: relative;
 	}
@@ -3898,6 +3976,7 @@ Primary use:	Showcase Portfolio
     top: 215px;  
     color: rgb(0, 0, 0);  
     position: relative;
+    
 	}
 
 	.sale03 {
@@ -3905,6 +3984,7 @@ Primary use:	Showcase Portfolio
     top: 440px;  
     color: rgb(0, 0, 0);  
     position: relative;
+
 	}
 
 	.sale04 {
@@ -4343,70 +4423,70 @@ Primary use:	Showcase Portfolio
 
 @media only screen and (max-width: 479px) {
 	.sale01 {
-    margin-left: 36%;  
+    
     top: 195px;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
 
 	.sale02 {
-    margin-left: 34%;  
+    
     top: 390px;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
 
 	.sale03 {
-    margin-left: 36%;
+    
     top: 585px;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
 
 	.sale04 {
-    margin-left: 36%;
+    
     top: 780px;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
 
 	.sale05 {
-    margin-left: 36%;
+    
     top: 975px;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
 
 	.sale06 {
-    margin-left: 36%;
+    
     top: 1170px;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
 
 	.sale07 {
-    margin-left: 36%;
+    
     top: 1365px;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
 
 	.sale08 {
-    margin-left: 36%;
+    
     top: 1560px;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
 
 	.sale09 {
-    margin-left: 36%;
+    
     top: 1755px;  
     color: rgb(0, 0, 0);  
     position: relative;
 	}
 
 	.sale10 {
-    margin-left: 36%;
+    
     top: 1950px;  
     color: rgb(0, 0, 0);  
     position: relative;
